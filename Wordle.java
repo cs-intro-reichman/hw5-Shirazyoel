@@ -108,8 +108,8 @@ public class Wordle {
         String secret = chooseSecretWord(dict);
 
         // Prepare 2D arrays for guesses and results
-        char[][] guesses = new char[5][6];
-        char[][] results = new char[5][6];
+        char[][] guesses = new char[MAX_ATTEMPTS][5];
+        char[][] results = new char[MAX_ATTEMPTS][5];
 
         // Prepare to read from the standart input 
         In inp = new In();
